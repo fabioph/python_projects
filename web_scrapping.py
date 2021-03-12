@@ -1,10 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-#LINKS
-# https://www.makita.pt/products/l%C3%ADtio-ion.html?fav=&brand_prefix=&overview_config_id=1&search=&svalue=&geo_svalue=&geo_distance=&page_size=&sort=&group_id=21090&extra_field=&sort_tech=&fromfilter=&voucher=&paging_page=1
-# https://www.makita.pt/products/l%C3%ADtio-ion.html?fav=&brand_prefix=&overview_config_id=1&search=&svalue=&geo_svalue=&geo_distance=&page_size=&sort=&group_id=21090&extra_field=&sort_tech=&fromfilter=&voucher=&paging_page=2
-# https://www.makita.pt/products/carregadores.html
-req = requests.get('https://www.makita.pt/products/l%C3%ADtio-ion.html?fav=&brand_prefix=&overview_config_id=1&search=&svalue=&geo_svalue=&geo_distance=&page_size=&sort=&group_id=21090&extra_field=&sort_tech=&fromfilter=&voucher=&paging_page=1')
+url = ""
+req = requests.get(url)
 if req.status_code == 200:
     print('Success!')
     content = req.content
