@@ -8,6 +8,6 @@ resources:
     properties:
       key_name: heat_keypair
       image: Fedora-Cloud-Base-33-1.2.x86_64
-      flavor: m1.small
+      flavor: m1.tiny
       networks:
         - network: private
