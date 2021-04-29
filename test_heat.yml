@@ -7,7 +7,7 @@ resources:
     type: OS::Nova::Server
     properties:
       key_name: heat_keypair
-      image: cirros-0.5.2-x86_64-disk
+      image: Fedora-Cloud-Base-33-1.2.x86_64
       flavor: cirros256
       networks:
         - network: private
