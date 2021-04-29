@@ -1,4 +1,4 @@
-heat_template_version: 2015-04-30
+heat_template_version: wallaby
 
 description: Simple template to deploy a single compute instance
 
@@ -9,3 +9,5 @@ resources:
       key_name: heat_keypair
       image: Fedora-Cloud-Base-33-1.2.x86_64
       flavor: m1.small
+      networks:
+        - network: private
